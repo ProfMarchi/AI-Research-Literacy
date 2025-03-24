@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Literacy Workflow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>AI Literacy Workflow for Research Writing</h1>
+    <p>Combining time-tested academic practices with modern AI assistance.</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#topic-selection">Topic Selection</a></li>
+      <li><a href="#literature-review">Literature Review</a></li>
+      <li><a href="#drafting">Drafting</a></li>
+      <li><a href="#revision">Revision</a></li>
+      <li><a href="#reflection">Reflection</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <!-- Step 1: Topic Selection -->
+    <section id="topic-selection" class="module">
+      <h2>Step 1: Topic Selection</h2>
+      <p>Reflect on your research interest and form a clear research question.</p>
+      <textarea id="topic-input" placeholder="Enter your research topic/question here..."></textarea>
+      <button onclick="saveContent('topic')">Save Topic</button>
+    </section>
+    
+    <!-- Step 2: Literature Review -->
+    <section id="literature-review" class="module">
+      <h2>Step 2: Literature Review</h2>
+      <p>Gather sources and summarize key points. What are the central ideas in your literature?</p>
+      <textarea id="literature-input" placeholder="Enter your literature review notes..."></textarea>
+      <button onclick="saveContent('literature')">Save Literature Review</button>
+    </section>
+    
+    <!-- Step 3: Drafting -->
+    <section id="drafting" class="module">
+      <h2>Step 3: Drafting</h2>
+      <p>Begin drafting your research writing using a structured approach. Let the AI assistant give you prompts!</p>
+      <textarea id="draft-input" placeholder="Start writing your draft here..."></textarea>
+      <button onclick="saveContent('draft')">Save Draft</button>
+    </section>
+    
+    <!-- Step 4: Revision -->
+    <section id="revision" class="module">
+      <h2>Step 4: Revision</h2>
+      <p>Revise your work. Compare traditional revision techniques with AI-suggested improvements.</p>
+      <textarea id="revision-input" placeholder="Make revisions here..."></textarea>
+      <button onclick="saveContent('revision')">Save Revision</button>
+    </section>
+    
+    <!-- Step 5: Reflection -->
+    <section id="reflection" class="module">
+      <h2>Step 5: Reflection</h2>
+      <p>Reflect on your process. What did you learn from integrating AI into your workflow?</p>
+      <textarea id="reflection-input" placeholder="Write your reflections here..."></textarea>
+      <button onclick="saveContent('reflection')">Save Reflection</button>
+    </section>
+  </main>
+  
+  <!-- AI Assistant Sidebar -->
+  <aside id="ai-assistant">
+    <h3>AI Assistant</h3>
+    <div id="chat-window">
+      <div class="message bot">Hello! I'm here to assist you. Ask me anything about your research process.</div>
+    </div>
+    <input type="text" id="chat-input" placeholder="Type your message here...">
+    <button onclick="sendMessage()">Send</button>
+  </aside>
+  
+  <footer>
+    <p>&copy; 2025 Traditional Scholarship & Modern AI Collaborative</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
